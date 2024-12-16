@@ -8,6 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Text goes here or smth"
+        android:textSize="20sp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"/>
 
@@ -15,9 +16,20 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Text"
+        android:text="Go to the naming part"
         android:layout_below="@id/editText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The results are gonna be here"
+        android:textSize="20sp"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
 
 </RelativeLayout>
