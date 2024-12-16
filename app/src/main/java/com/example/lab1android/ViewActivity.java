@@ -1,22 +1,35 @@
 package com.example.lab1android;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ViewActivity extends AppCompatActivity {
 
-    private TextView textView;
+    private EditText nameEditText;
+    private Button closeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_activity);
 
-        textView = findViewById(R.id.textView);
+        nameEditText = findViewById(R.id.nameEditText);
+        closeButton = findViewById(R.id.closeButton);
 
-        // Получаем текст, переданный из MainActivity
-        String text = getIntent().getStringExtra("text_key");
-        textView.setText(text);
+        closeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = nameEditText.getText().toString().trim();
+                Intent resultIntent = new Intent();
+                resultIntent.putExtra("name_key", name);
+                setResult(RESULT_OK, resultIntent);
+                finish();
+            }
+        });
     }
 }
+
