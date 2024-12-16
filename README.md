@@ -1,10 +1,12 @@
 # Первая домашняя работа по Андройд
 ## Функционал
-Приложение получает текст от пользователя на ввод и после нажатия кнопки интентом переносится в окно/активити просмотра.
+Приложение получает текст приветствия от пользователя на ввод и после нажатия кнопки интентом переносится во вторую активити, где вводит имя, по которому к нему обращаются в строке результата в первом окне.
 ## Внешний вид
-![1st screenshot of the app](https://github.com/AlexVenem/Android-HSE/blob/master-lab1/app/1-1%20Android.png)
-![2nd screenshot of the app](/app/1-2%20Android.png)
-![3rd screenshot of the app](https://github.com/AlexVenem/Android-HSE/blob/master-lab1/app/1-3%20Android.png)
+![1st screenshot of the app](/app/1-1%20Android%20fix.png)
+![2nd screenshot of the app](/app/1-2%20Android%20fix.png)
+![3rd screenshot of the app](/app/1-3%20Android%20fix.png)
+![4th screenshot of the app](/app/1-4%20Android%20fix.png)
+![5th screenshot of the app](/app/1-5%20Android%20fix.png)
 
 # Вторая и третья работа по Андройд
 ## Функционал 
